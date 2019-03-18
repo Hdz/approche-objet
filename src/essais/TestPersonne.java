@@ -6,5 +6,9 @@ public class TestPersonne {
 		
 		AdressePostale adresse1 = new AdressePostale(7,"La Close Provost","Puceul",44390);
 		Personne personne = new Personne("Drouaud","Aurélien",adresse1);
+		personne.setNom("Patrick");
+		personne.getAdresse();
+		personne.Affiche();
+	
 	}
 }
