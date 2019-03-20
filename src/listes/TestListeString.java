@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class TestListeString {
-	public static void TestlisteString(String[] args) {
+	public static void TestString(String[] args) {
 		List<String> list = new ArrayList <>(); 
 		list.add("Nice");
 		list.add("Carcassonne");

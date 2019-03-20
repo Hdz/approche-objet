@@ -42,7 +42,7 @@ public class Ville {
 	}
 
 
-	public static void main(String[] args) {
+	public static void Ville(String[] args) {
 
 		List<Ville> list = new ArrayList <>();
 		Ville ville = new Ville("Nice", 343000);
