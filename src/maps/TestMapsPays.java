@@ -4,6 +4,8 @@ package maps;
 import java.util.*;
 import sets.Pays;
 
+import tri.ComparatorHab;
+import tri.ComparatorPibHab;
 
 public class TestMapsPays {
 	public static void main(String[] args) {
@@ -62,7 +64,25 @@ public class TestMapsPays {
 				while (cle.hasNext()) {
 					System.out.println(cle.next());
 		}
-			}
+				ArrayList<Pays> pays = new ArrayList<>();  
+
+				pays.add(new Pays("USA",67795000,38476.7));
+				pays.add(new Pays("France", 67795000, 38476.7));
+				pays.add(new Pays("Allemagne", 82979100, 47589.972));
+				pays.add(new Pays("UK", 65105246, 43770.688));
+				pays.add(new Pays("Italie", 60483973, 29866));
+				pays.add(new Pays("Japon", 126168156, 39058.5));
+				pays.add(new Pays("Chine", 1417913092, 7989.72));
+				pays.add(new Pays("Russie", 146880400, 11099.20));
+				pays.add(new Pays("Inde", 1296834042, 1626.982));
+				
+				System.out.println(pays);
+				Collections.sort(pays,new ComparatorHab());
+				System.out.println(pays);
+				Collections.sort(pays,new ComparatorPibHab());
+				System.out.println(pays);
+		
+	}
 
 		}
 	

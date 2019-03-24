@@ -1,4 +1,5 @@
 package sets;
+import java.util.HashSet;
 
 public class Pays implements Comparable<Pays> {
 	private String nom;
@@ -50,8 +51,14 @@ public class Pays implements Comparable<Pays> {
 	}
 
 	@Override
-	public int compareTo(Pays o) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+	public int compareTo(Pays arg0) {
+		if(this.pibperhab < arg0.getPibperhab()) {
+			return -1;
+		}
+		else if(this.pibperhab > arg0.getPibperhab()) {
+			return 1;
+		}else {
+			return 0;
 }
+}
+	}
